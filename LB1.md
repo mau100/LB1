@@ -2,16 +2,26 @@
 
 ## Inhaltsverzeichnis
 
-* [Modul Auftrag]()
-* [Tools]()
-* [Service Beschreibung]()
-* [Network Setup]()
-* [Sicherheitsaspekte]()
-* [Vagrant File]()
-* [Webserver Konfiguration]()
-* [Installation]()
-* [Test Cases]()
-* [Persönliche Lernentwicklung]()
+- [Modul 300 LB1 - Amauri Valdez](#modul-300-lb1---amauri-valdez)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [Tools](#tools)
+    - [Virtualbox](#virtualbox)
+    - [Vagrant](#vagrant)
+    - [Vagrant File](#vagrant-file)
+    - [Visualstudio-Code](#visualstudio-code)
+    - [Git](#git)
+  - [Auftrag](#auftrag)
+  - [Service-Beschreibung](#service-beschreibung)
+  - [Network-Setup](#network-setup)
+  - [Sicherheitsaspekte](#sicherheitsaspekte)
+  - [Webserver-Konfiguration](#webserver-konfiguration)
+  - [Index](#index)
+  - [sendmail.php](#sendmailphp)
+  - [dir.conf](#dirconf)
+  - [Installation](#installation)
+- [Test-Cases](#test-cases)
+- [Persönliche-Lernentwicklung](#pers%C3%B6nliche-lernentwicklung)
+- [Endprodukt](#endprodukt)
 
 ## Tools
 
@@ -38,16 +48,16 @@ Visualstudio-Code habe ich genutzt, um die einzelne Files wie meine php, vagrant
 Git ist eine Opensource Software die zur Verwaltung von Dateien dient. Um Git lokal benutzen zu können, muss der Git-Client installiert werden, daraufhin wird eine Verbindung mit dem persönlich Git-Repository aufgestellt. Von der Git Bash aus können Repository heruntergeladen werden und lokal ausgeführt werden. Damit dies funktioniert habe ich einen SSH-Key für den Client erstellt der mit Passphrase geschützt ist.
 
 
-## Modul Auftrag
+## Auftrag
 
 In diesem Modul lernen wir verschiedene Dienste, Virtualisierungssoftware und Versionierungstool kennen. Mein Auftrag war es einen oder mehrere Dienste auf einer Virtuellen Maschinen (VM) mit Virtualbox aufzusetzen, und die VM samt Dienste anhand des Vagrantfile's zu automatisieren. Das bedeutet, dass ein *Vagrant up* eine funktionstüchtige Umgebung mit ihren Komponenten und Servicen automatisch installieren soll. 
 
-## Service Beschreibung
+## Service-Beschreibung
 
 Ich habe als Dienst einen Webserver eingerichtet, welcher ein mit php / html betriebenes Web-Formular anzeigt, und eine E-Mail via SSL an den Google Mail Server sendet. Der Benutzer kann seine E-Mail Adresse, Subjekt und den Text angeben, dieser wird anschliessend dem Gmail Konto gesendet. Zusätzlich wird ein Benutzer erstellt der sich auf die VM anmelden kann.
 
 
-## Network Setup
+## Network-Setup
 
 ```
 +------------------------------------------+
@@ -98,7 +108,7 @@ echo "Test1234
 ```
 
 
-## Webserver Konfiguration
+## Webserver-Konfiguration
 
 
 Die VM wird mit folgenden Einstellungen erzeugt, die Einstellungen wurden natürlich stark vom Netzwerkplan beeinflusst. Zu vermerken ist auch, dass die auf meiner lokalen Maschine angepasste Konfigurationsdateien auf die virtuelle Maschine kopiert wird.
@@ -198,7 +208,7 @@ end
   ```
 
 
-# Test Cases
+# Test-Cases
 
 
 | Testfall        | Soll           | Ist  | Datum |
@@ -207,10 +217,10 @@ end
 | E-Mail    | Das E-Mail kann erfolgreich gesendet werden     | Das E-Mail wird erfolgreich in der Inbox angezeigt und der Inhalt des Feedbackformulars ist ersichtlich   | 20.03.2019 |
 | E-Mail verschlüsselt | Die E-Mail wird via TLS versendet  |  Der E-Mail parameter TLS ist auf True und E-Mail ist somit verschlüsselt | 20.03.2019 |
 | BenutzerLB1 | Der BenutzerLB1 hat root rechte und kann Service neustarten etc. | Der BenutzerLB1 kann den erfolgreich Services neustarten und die Konfigurationsdateien anpassen| 20.03.2019|
-| Firewall | Die Firewall Ports 22 und 80 sind geöffnet | Die Firewall öffnet die Ports 22 und 80. Die Firewall ist installiert und öffnet die geforderten Ports|20.03.2019 |
+| Firewall | Die Firewall Ports 22 und 80 sind geöffnet | Die Firewall öffnet die Ports 22 und 80. Die Firewall ist installiert und öffnet die geforderten Ports. Ufw status eingegeben|20.03.2019 |
 
 
-# Persönliche Lernentwicklung
+# Persönliche-Lernentwicklung
 
 Ich konnte in dieser LB1 viel über Vagrant / Github lernen, da ich zuvor nie in diesen Umgebungen gearbeitet habe. Mir wurde klar wie Github funktioniert und was alles für Aspekte zu beachten sind. Da ich nonie mit VirtualBox gearbeitet habe, hatte ich ziemlich mühe am Anfang zumal auch keine richtige Einleitung gemacht wurde. Ich wurde ins kalte Wasser geworfen und musste mir selber die Informationen suchen, was ich ziemlich anstrengend fand, da ich nicht genau wusste wie Anfangen, weil wir keinen richtigen Input hatten. Trotzdem gelang es mir einen Webserver aufzusetzen und die nötigen Vagrant Commandos ins Vagrantfile zu implementieren. Das Senden des E-Mails konnte ich per TLS senden, dass realisierte ich mit Php, und somit habe ich ein Sicherheitsfeature implementieren können. Ich konnte mich mit meinen Mitschülern austauschen und wir halfen uns so gegenseitig. Letztlich weiss ich nun wie man die ganze Umgebung aufsetzt und wie ein Vagrantfile konfiguriert wird. 
 
