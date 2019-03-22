@@ -229,7 +229,11 @@ Ich konnte in dieser LB1 viel über Vagrant / Github lernen, da ich zuvor nie in
 
 # Endprodukt
 
+Webseite sieht folgendermassen aus:
+
 ![Image](./Formular.jpg)
+
+Das E-Mail sieht so aus:
 
 ![Image](./Mail.jpg)
 
