@@ -1,16 +1,16 @@
 # Modul 300 LB1 - Amauri Valdez
 
-## Inhaltsverzeichnis
+# Inhaltsverzeichnis
 
 - [Modul 300 LB1 - Amauri Valdez](#modul-300-lb1---amauri-valdez)
-  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+- [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [Tools](#tools)
     - [Virtualbox](#virtualbox)
     - [Vagrant](#vagrant)
     - [Vagrant File](#vagrant-file)
     - [Visualstudio-Code](#visualstudio-code)
     - [Git](#git)
-  - [Auftrag](#auftrag)
+- [Auftrag](#auftrag)
   - [Service-Beschreibung](#service-beschreibung)
   - [Network-Setup](#network-setup)
   - [Sicherheitsaspekte](#sicherheitsaspekte)
@@ -48,7 +48,7 @@ Visualstudio-Code habe ich genutzt, um die einzelne Files wie meine php, vagrant
 Git ist eine Opensource Software die zur Verwaltung von Dateien dient. Um Git lokal benutzen zu können, muss der Git-Client installiert werden, daraufhin wird eine Verbindung mit dem persönlich Git-Repository aufgestellt. Von der Git Bash aus können Repository heruntergeladen werden und lokal ausgeführt werden. Damit dies funktioniert habe ich einen SSH-Key für den Client erstellt der mit Passphrase geschützt ist.
 
 
-## Auftrag
+# Auftrag
 
 In diesem Modul lernen wir verschiedene Dienste, Virtualisierungssoftware und Versionierungstool kennen. Mein Auftrag war es einen oder mehrere Dienste auf einer Virtuellen Maschinen (VM) mit Virtualbox aufzusetzen, und die VM samt Dienste anhand des Vagrantfile's zu automatisieren. Das bedeutet, dass ein *Vagrant up* eine funktionstüchtige Umgebung mit ihren Komponenten und Servicen automatisch installieren soll. 
 
