@@ -67,7 +67,7 @@ config.vm.provision "shell", inline: <<-SHELL
 
   sudo ufw --force enable
   sudo ufw default deny incoming
-  sudo uwf allow 22/tcp
+  sudo ufw allow 22/tcp
   sudo ufw allow 80/tcp
 
   echo "test1234
