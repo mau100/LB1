@@ -16,6 +16,10 @@ try{
    $mail->addAddress('avocadoguacamole11@gmail.com');
    $mail->Subject = $subject;
    $mail->Body = $content;
+   $mail->Body .= "
+   Kunde möchte auf folgende E-Mail kontaktiert werden: 
+   ";
+   $mail->Body .= $name;
    /* SMTP parameters. */
 
    /* Tells PHPMailer to use SMTP. */
@@ -58,7 +62,7 @@ catch (Exception $e)
 <title> Email send </title>
 </head>
 <body>
-<h1> Email versendet </h1>
+<h1> Ihre Email wurde versendet. Ihr liegen wird so schnell wie möglich bearbeitet </h1>
 </body>
 </html>
 
