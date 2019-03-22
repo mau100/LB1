@@ -97,7 +97,7 @@ Für mehr Sicherheit sorgt der BenutzerLB1, der sudo rechte bekommt und gewisse 
 
   sudo ufw --force enable
   sudo ufw default deny incoming
-  sudo uwf allow 22/tcp
+  sudo ufw allow 22/tcp
   sudo ufw allow 80/tcp
 
 echo "Test1234
@@ -213,10 +213,10 @@ end
 
 | Testfall        | Soll           | Ist  | Datum |
 | ------------- |-------------| -----|----------|
-| Webseite ist erreichbar via Port 80 mit Portforwding   | Die Webseite kann vom Lokalen PC aufgerufen werden| Die Webseite ist aufrufbar und der Port 8080 ist aktiv | 20.03.2019|
-| E-Mail    | Das E-Mail kann erfolgreich gesendet werden     | Das E-Mail wird erfolgreich in der Inbox angezeigt und der Inhalt des Feedbackformulars ist ersichtlich   | 20.03.2019 |
-| E-Mail verschlüsselt | Die E-Mail wird via TLS versendet  |  Der E-Mail parameter TLS ist auf True und E-Mail ist somit verschlüsselt | 20.03.2019 |
-| BenutzerLB1 | Der BenutzerLB1 hat root rechte und kann Service neustarten etc. | Der BenutzerLB1 kann den erfolgreich Services neustarten und die Konfigurationsdateien anpassen| 20.03.2019|
+| Webseite ist erreichbar via Port 80 mit Portforwding   | Die Webseite kann vom Lokalen PC aufgerufen werden| Die Webseite ist aufrufbar und der Port 8080 ist aktiv. Localhost:8080 in Webbrowser getippt. | 20.03.2019|
+| E-Mail    | Das E-Mail kann erfolgreich gesendet werden     | Das E-Mail wird erfolgreich in der Inbox angezeigt und der Inhalt des Feedbackformulars ist ersichtlich. Gmail Konto überprüft.   | 20.03.2019 |
+| E-Mail verschlüsselt | Die E-Mail wird via TLS versendet  |  Der E-Mail parameter TLS ist auf True und E-Mail ist somit verschlüsselt. Anhand der Konfigurationsdatei getestet. | 20.03.2019 |
+| BenutzerLB1 | Der BenutzerLB1 hat root rechte und kann Service neustarten etc. | Der BenutzerLB1 kann den erfolgreich Services neustarten und die Konfigurationsdateien anpassen. | 20.03.2019|
 | Firewall | Die Firewall Ports 22 und 80 sind geöffnet | Die Firewall öffnet die Ports 22 und 80. Die Firewall ist installiert und öffnet die geforderten Ports. Ufw status eingegeben|20.03.2019 |
 
 
